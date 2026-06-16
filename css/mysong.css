@@ -1,17 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho&family=Zen+Kaku+Gothic+New&display=swap');
 
 
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(180, 180, 180);
     /* background-image: url(../images/summer.png); */
+    color: black;
+    display: flex;
+    /* transition: all 1s; */
 }
 
-a {
+.name a {
     text-decoration: none;
     color: white;
     transition: all 1s;
 }
-a:hover {
+.name a:hover {
     color: aqua;
 }
 
@@ -20,6 +25,7 @@ a:hover {
     background-image: linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.3)),url(../images/summer.png);
     background-size: cover;
     background-position: center;
+    margin-left: 20px;
     width: 1600px;
     height: 1000px;
     /* opacity: 0.7; */
@@ -34,8 +40,10 @@ a:hover {
 
 /* タイトル */
 .ttl {
-    font-size: 45px;
+    font-size: 32px;
     text-align: center;
+    font-family: "Shippori Mincho", serif;
+    /* font-weight: bold; */
     color: white;
     padding-top: 60px;
     text-shadow: 2px 2px 3px black;
@@ -48,13 +56,18 @@ a:hover {
     color: white;
     text-shadow: 2px 2px 3px black;
     transition: all 1s;
+    font-family: "Shippori Mincho", serif;
 }
-.name:hover {
-    /* transform:scale(1.05); */
+
+.name a:hover::before {
+    /* content: "→ "; */
 }
+
 
 /* 歌詞 */
 .kashi,.kashi2 {
+    /* font-family: "Zen Kaku Gothic New", sans-serif; */
+    font-family: "Shippori Mincho", serif;
     font-size: 20px;
     text-align: left;
     margin-left: 1000px;
@@ -70,6 +83,28 @@ a:hover {
     text-shadow: 2px 2px 3px black;
 }
 
-iframe {
+
+.link  {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
     
+}
+.link a {
+    margin-top: 30px;
+    margin-left: 70px;
+    text-decoration: none;
+    font-family: "Shippori Mincho", serif;
+    font-size: 14px;
+    color: white;
+    transition: all 1s;
+    text-shadow: 2px 2px 3px black ;
+}
+
+.link a:hover {
+    /* color: black; */
+    transform: scale(1.05);
+}
+.link a:hover::before {
+    /* content: "→ "; */
 }
